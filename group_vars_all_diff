@@ -1,0 +1,11 @@
+15c15,16
+< # no_proxy: localhost,cluster.local,127.0.0.1,::1,10.0.2.10,10.0.2.20,10.0.2.30
+---
+> no_proxy: localhost,cluster.local,127.0.0.1,::1,10.0.2.10,10.0.2.20,10.0.2.30
+> additional_no_proxy: .svc,.svc.cluster.local 
+28,29c29,30
+< #dns_config_servers: [8.8.8.8]
+< #dns_config_search: [example.com]
+---
+> dns_config_servers: [1.1.1.1 1.0.0.1 8.8.8.8 8.8.4.4]
+> dns_config_search: [fit.edu netbird.selfhosted cluster.local]

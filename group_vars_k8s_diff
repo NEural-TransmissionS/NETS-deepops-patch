@@ -1,0 +1,13 @@
+0a1,2
+> additional_no_proxy: .svc,.svc.cluster.local
+> 
+74,75c76,77
+< containerd_insecure_registries:
+<   "registry.local:31500": "http://registry.local:31500"
+---
+> #containerd_insecure_registries:
+> #  "registry.local:31500": "http://registry.local:31500"
+76a79,81
+> containerd_snapshotter: "native"
+> 
+> 

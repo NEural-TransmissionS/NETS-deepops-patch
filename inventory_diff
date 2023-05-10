@@ -1,0 +1,16 @@
+17a18,19
+> n0k0m3-master ansible_host=100.67.156.68
+> n0k0m3-node01 ansible_host=100.67.181.18
+22a25
+> n0k0m3-master #master node name
+28a32
+> n0k0m3-master #etcd node name
+34a39,40
+> n0k0m3-master #worker node name
+> n0k0m3-node01
+85,86c91,92
+< #ansible_user=ubuntu
+< #ansible_ssh_private_key_file='~/.ssh/id_rsa'
+---
+> ansible_user=n0k0m3
+> ansible_ssh_private_key_file='~/.ssh/id_rsa'
